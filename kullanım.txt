@@ -1,0 +1,11 @@
+python2 auto-upload.py sites.txt Username Password
+
+mass chage ile çekilen siteleri linklerini sites txt adýnda dosya açmanýz lazým
+açtýktan sonra masschange shell ile çektiðiniz siteleri yapýstýracaksýnýz 
+sonra auto-upload çalýstýrýp   python auto-upload.py sites.txt admin admin  yazýp auto shell yükleyecek  bununla bypass yapabilirsiniz
+
+
+mass change çektiði tüm siteleri  kullanýcý adý : admin siþresi : admin olarak çekecek  
+
+
+windows kullaným:: python auto-upload.py sites.txt Username Password

